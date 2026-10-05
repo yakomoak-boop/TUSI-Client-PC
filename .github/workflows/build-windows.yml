@@ -1,0 +1,36 @@
+name: Build TUSI Client Windows
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: npm
+
+    - name: Install
+      run: npm install
+
+    - name: Build EXE
+      run: npm run build
+
+    - name: Upload EXE
+      uses: actions/upload-artifact@v4
+      with:
+        name: TUSI-Client-Windows
+        path: dist/*.exe

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TUSI Client</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+<div class="brand">
+<div class="logo">T</div>
+<div>
+<strong>TUSI</strong>
+<small>CLIENT</small>
+</div>
+</div>
+
+<button class="nav active">⌂ Home</button>
+<button class="nav">◈ Versions</button>
+<button class="nav">▣ Mods</button>
+<button class="nav">◇ Cosmetics</button>
+<button class="nav">⚡ TUSI Boost</button>
+<button class="nav">⚙ Settings</button>
+
+<div class="account">
+<div class="avatar">T</div>
+<div>
+<strong>Offline Profile</strong>
+<small>Local Account</small>
+</div>
+</div>
+
+</aside>
+
+<main>
+
+<header>
+<div>
+<p>TUSI CLIENT</p>
+<h1>Welcome back.</h1>
+<span>Minecraft, your way.</span>
+</div>
+
+<button class="login">Microsoft Login</button>
+</header>
+
+<section class="hero">
+
+<div>
+<label>FABRIC</label>
+<h2>Minecraft 1.21.11</h2>
+<p>Optimized Minecraft profile with TUSI performance.</p>
+
+<div class="buttons">
+<button class="play">▶ PLAY</button>
+<button>Manage Profile</button>
+</div>
+</div>
+
+<div class="biglogo">T</div>
+
+</section>
+
+<section class="boost">
+
+<div class="boosttop">
+<div>
+<p>TUSI PERFORMANCE</p>
+<h2>⚡ TUSI Boost</h2>
+<span>Maximum performance profile.</span>
+</div>
+
+<button class="optimize" onclick="optimize()">⚡ OPTIMIZE</button>
+</div>
+
+<div class="cards">
+
+<div>
+<strong>FPS BOOST</strong>
+<span>Sodium + Lithium + Entity Culling</span>
+<b>ON</b>
+</div>
+
+<div>
+<strong>RAM BOOST</strong>
+<span>Automatic safe memory allocation</span>
+<b>AUTO</b>
+</div>
+
+<div>
+<strong>JAVA BOOST</strong>
+<span>G1GC optimized JVM profile</span>
+<b>ON</b>
+</div>
+
+<div>
+<strong>LOW MEMORY</strong>
+<span>Reduced particles and rendering</span>
+<b>READY</b>
+</div>
+
+</div>
+
+<div id="status"></div>
+
+</section>
+
+<section class="features">
+
+<div>
+<strong>Modrinth</strong>
+<span>Install Minecraft mods.</span>
+<button>Open Mods</button>
+</div>
+
+<div>
+<strong>Cosmetics</strong>
+<span>Cape • Cloak • Claw • Emotes</span>
+<button>Customize</button>
+</div>
+
+<div>
+<strong>Versions</strong>
+<span>Fabric Minecraft versions.</span>
+<button>Manage</button>
+</div>
+
+</section>
+
+<footer>
+TUSI Client 1.0.0 • Windows PC
+</footer>
+
+</main>
+
+<script>
+function optimize() {
+  document.getElementById("status").textContent =
+    "✓ TUSI Boost enabled — FPS, RAM and JVM profile optimized.";
+}
+</script>
+
+</body>
+</html>

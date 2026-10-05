@@ -1,0 +1,15 @@
+{
+  "name": "tusi-client-pc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TUSI Client for Windows",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.0"
+  }
+}
